@@ -1,54 +1,142 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-<main class="wrapper">
-    <section class="hero">
-      <h1>You thirsty?</h1>
-      <article>
-        <p>Explore local breweries with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global death.</p>
-        <a href="#breweries">Browse Breweries</a>
-      </article>
+<!-- 
+    Olá!
+    Esta é a estrutura HTML básica para o seu desafio :)
+
+    - Você pode: alterar a estrutura HTML e adicionar classes;
+    - Você não pode: remover ou alterar conteúdo (elementos textuais e imagens).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <meta charset="utf-8" />
+    <title>Teste Linx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <header>
+        <div class="retangulo-superior">
+            <h1>
+                Tarefas a fazer
+            </h1>
+            <p>
+                Adicione e complete tarefas para organizar melhor a sua semana. :)
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0  100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,100 100,60 100,100" />
+            </svg>
+        </div>
+    </header>
+
+
+    <section class="main">
+
+
+        <header>
+            <ul>
+                <li>
+                    <form>
+                        <input type="text" name="Busque tarefas" placeholder="Busque tarefas">
+                        <button>Buscar</button>
+                    </form>
+                </li>
+                <li>
+                    <div id="select"><span>Organizar por:</span> 
+                        <select>
+                            <option value="relevance">
+                                Prazo
+                            </option>
+                            <option value="ascPrice">
+                                Data de inclusão
+                            </option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    
+        <!--
+        <section>
+            <div>
+                <div>
+                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                    <div>Prazo curto!</div>
+                </div>
+                <div>
+                    <h3>Nome da tarefa</h3>
+                    <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se
+                        trata.</p>
+                    <div>Prazo: 00/00/00</div>
+                </div>
+                <button>Concluir</button>
+                <div>Data de inclusão: há 2 semanas</div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                </div>
+                <div>
+                    <h3>Nome da tarefa</h3>
+                    <p>Descrição da tarefa, o que deve ser feito.</p>
+                    <div>Prazo: 00/00/00</div>
+                </div>
+                <button>Concluir</button>
+                <div>Data de inclusão: há 2 semanas</div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                </div>
+                <div>
+                    <h3>Nome da tarefa</h3>
+                    <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se
+                        trata.</p>
+                    <div>Prazo: 00/00/00</div>
+                </div>
+                <button>Concluir</button>
+                <div>Data de inclusão: há 2 semanas</div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                </div>
+                <div>
+                    <h3>Nome da tarefa</h3>
+                    <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se
+                        trata.</p>
+                </div>
+                <button>Concluir</button>
+                <div>Data de inclusão: há 2 semanas</div>
+            </div>
+        </section>
+    -->
     </section>
-    <section class="breweries" id="breweries">
-      <ul>
-        <li>
-          <figure>
-            <!-- Photo by Quentin Dr on Unsplash -->
-            <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
-            <figcaption><h3>Billions upon billions</h3></figcaption>
-          </figure>
-          <p>
-            Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?
-          </p>
-          <a href="#">Visit Website</a>
-        </li>
-        <li>
-          <figure>
-            <!-- Photo by Drew Farwell on Unsplash -->
-            <img src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="Several friends doing a toast">
-            <figcaption><h3>Drake Equation</h3></figcaption>
-          </figure>
-          <p>
-            Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.
-          </p>
-          <a href="#">Visit Website</a>
-        </li>
-        <li>
-          <figure>
-            <!-- Photo by Rawpixel on Unsplash -->
-            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Three different glasses of beer">
-            <figcaption><h3>Vast cosmic arena</h3></figcaption>
-          </figure>
-          <p>
-            Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.
-          </p>
-          <a href="#">Visit Website</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2019. Made with ❤ and CSS Grid.</p>
-  </footer>
-  </html>
+    <!--
+    <footer>
+        <img src="https://www.linx.com.br/app/themes/linx/crystals/dist/assets/static/logo.png">
+        <p>
+            A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de
+            gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.
+            Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os
+            varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.
+            Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com
+            capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede
+            em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse linx.com.br/imprensa.
+        </p>
+        <p>Testando suas habilidades em HTML e CSS. Linx Impulse 2020</p>
+    </footer>
+-->
+</body>
+
+</html>
