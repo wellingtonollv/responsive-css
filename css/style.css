@@ -26,6 +26,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*------*/
 /*--------------POLIGONO SUPERIOR-----------------------------*/
 .retangulo-superior {
@@ -107,6 +111,12 @@ svg {
   border-radius: 8px 0 0 8px;
 }
 
+.nav-menu input:focus {
+  background-repeat: no-repeat;
+  border-color: none;
+  outline: 0;
+}
+
 .nav-menu #nav-button {
   padding: 8px 10px;
   background: #6e4b87;
@@ -155,6 +165,12 @@ svg {
   padding-left: 15px;
 }
 
+.nav-menu select:focus {
+  background-repeat: no-repeat;
+  border-color: none;
+  outline: 0;
+}
+
 .nav-menu .busca {
   width: 307px;
   padding: 10px 0 10px 0;
@@ -178,24 +194,7 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 72px;
-  margin-bottom: 82px;
   position: relative;
-}
-
-@media only screen and (max-width: 768px) {
-  .tarefas {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .tarefa-texts {
-    padding-left: 25px;
-  }
 }
 
 .tarefa-item {
@@ -315,6 +314,38 @@ svg {
   color: #414141;
 }
 
+/*ABOUT*/
+.about {
+  padding-top: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #422755;
+  text-align: left;
+  max-width: 699px;
+  max-height: 180px;
+}
+
+.about p {
+  padding: 9px;
+}
+
+/*---------------MEDIAS-------------------*/
 @media only screen and (max-width: 768px) {
   .tarefa-item {
     width: 89%;
@@ -333,5 +364,33 @@ svg {
     width: 174px;
     height: 174px;
   }
+  .image {
+    padding-bottom: 54px;
+  }
+  .text {
+    text-align: center !important;
+    width: 309px;
+    height: 304px;
+    font-size: 12px !important;
+    padding: 0px 25px 0px 25px;
+  }
 }
+
+@media only screen and (max-width: 768px) {
+  .tarefas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tarefa-texts {
+    padding-left: 25px;
+  }
+}
+
+/*---------------MEDIAS-------------------*/
 /*# sourceMappingURL=style.css.map */
