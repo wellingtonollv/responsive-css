@@ -4,11 +4,6 @@ $main-color: #422755;
 $font: "Open Sans",
 sans-serif;
 
-/*--espaçamentos--*/
-$margin-retangle-nav: 56px;
-$margin-nav-flex: 71px;
-$margin-flex-text: 82px;
-$margin-text-footer: 48px;
 
 /*RESETS*/
 * {
@@ -19,7 +14,6 @@ $margin-text-footer: 48px;
     border: 0;
 }
 
-/*--*/
 
 /* visuais  */
 ::-webkit-scrollbar {
@@ -40,8 +34,6 @@ html {
 }
 
 /*------*/
-
-
 
 
 /*--------------POLIGONO SUPERIOR-----------------------------*/
@@ -80,16 +72,19 @@ svg {
     transform: rotateY(180deg);
 }
 
-/*--------POLIGONO SUPERIOR---*/
+/*---------------------------*/
+
 
 .main {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1080px));
     justify-content: center;
-    margin-top: $margin-retangle-nav;
+    margin-top: 56px;
 }
 
+
+/*-----------NAV MENU--------------*/
 .nav-menu {
     ul {
         display: flex;
@@ -136,8 +131,6 @@ svg {
         transition: 0.3s;
         right: 0;
 
-
-
         &:focus {
             background-repeat: no-repeat;
             border-color: none;
@@ -174,13 +167,11 @@ svg {
             background-repeat: no-repeat;
             border-color: none;
             outline: 0;
-
         }
     }
 
     .busca {
         width: 307px;
-
         padding: 10px 0 10px 0;
     }
 
@@ -189,6 +180,10 @@ svg {
     }
 }
 
+/*----------FIM DO NAV MENU----*/
+
+
+/*---------TAREFAS----------------*/
 .tarefas {
     display: flex;
     flex-direction: row;
@@ -197,7 +192,6 @@ svg {
     margin-top: 72px;
     position: relative;
 }
-
 
 .tarefa-item {
     width: 230px;
@@ -226,13 +220,12 @@ svg {
         padding: 6px;
     }
 
-    .imagem {
+    .image-tarefa {
         height: 180px;
         margin: 0 auto;
         padding-bottom: 5px;
-        
-    }
 
+    }
 
     img {
         max-width: 100%;
@@ -240,7 +233,6 @@ svg {
     }
 
     .tarefa-texts {
-
         display: table;
         width: 100%;
         height: 180px;
@@ -296,7 +288,6 @@ svg {
             transition: 0.3s;
             padding: 3%;
 
-
             &:hover {
                 opacity: 1;
                 color: #fff;
@@ -321,18 +312,16 @@ svg {
     }
 }
 
+/*----------------------------*/
 
-/*ABOUT*/
+
+/*------SOBRE A EMPRESA---------*/
 .about {
-    
-    align-items: center;
-    
-    justify-content: center;
-   
-    
-    padding-top: 83px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 83px;
     justify-content: space-around;
     align-items: center;
 
@@ -345,54 +334,64 @@ svg {
         color: $main-color;
         text-align: left;
         max-width: 699px;
-        
     }
 
     p {
         padding: 9px;
-        
+
     }
-    .image{
+
+    .image-about {
         padding-bottom: 54px;
         padding-left: 54px;
     }
 
 }
 
-.retangulo-footer {
-    position: relative;
-    
-    height: 126px;  
-    margin-top:84px;
+/*---------------------------*/
 
-    background-image: linear-gradient($main-color, $main-color);
-    width: 100%;
 
-    p {
-        text-align: center;
-        color: white;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-        margin-bottom: 0;
-    }
-    #texto-footer {
-        padding-top: 50px;
+/*--------------------FOOTER------------------------------------*/
+footer {
+    .retangulo-footer {
+        position: relative;
+        height: 126px;
+        margin-top: 44px;
+        background-image: linear-gradient($main-color, $main-color);
+        width: 100%;
+
+        p {
+            text-align: center;
+            color: white;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        #texto-footer {
+            padding-top: 50px;
+        }
     }
 }
 
-
-
-
-
-
-
+/*---------------------------*/
 
 
 /*---------------MEDIAS-------------------*/
 @media only screen and (max-width: 768px) {
+
+    .nav-menu {
+        padding: 10px;
+    }
+
+    .tarefas {
+        flex-direction: column;
+        padding: 10px;
+    }
+
     .tarefa-item {
         width: 89%;
         height: auto;
@@ -406,35 +405,32 @@ svg {
             height: 178px;
         }
 
-    }
-    .image {
-        padding-bottom: 54px;
+        .tarefa-texts {
+            padding-left: 25px;
+        }
+
     }
 
-    .text {
-        text-align: center !important;
-        width: 309px;
-        height: 304px;
-        font-size:12px !important;
-        padding:0px 25px 0px 25px;
-    }
-    .about{
+    .about {
         padding-top: 0px;
+
+        .image-about {
+            padding-bottom: 54px;
+        }
+
+        .text {
+            text-align: center !important;
+            width: 309px;
+            height: 304px;
+            font-size: 12px !important;
+            padding: 0px 25px 0px 25px;
+        }
     }
+
+    .retangulo-footer {
+        margin-top: 100px !important;
+    }
+
 }
 
-@media only screen and (max-width: 768px) {
-    .tarefas {
-        flex-direction: column;
-        padding: 10px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .tarefa-texts {
-        padding-left: 25px;
-    }
-
-}
-
-/*---------------MEDIAS-------------------*/
+/*---------------------------------*/

@@ -1,6 +1,4 @@
-@charset "UTF-8";
 /*cores*/
-/*--espaçamentos--*/
 /*RESETS*/
 * {
   padding: 0;
@@ -10,7 +8,6 @@
   border: 0;
 }
 
-/*--*/
 /* visuais  */
 ::-webkit-scrollbar {
   width: 0px;
@@ -63,7 +60,7 @@ svg {
   transform: rotateY(180deg);
 }
 
-/*--------POLIGONO SUPERIOR---*/
+/*---------------------------*/
 .main {
   display: grid;
   align-items: center;
@@ -72,6 +69,7 @@ svg {
   margin-top: 56px;
 }
 
+/*-----------NAV MENU--------------*/
 .nav-menu ul {
   display: flex;
   flex-wrap: wrap;
@@ -150,6 +148,8 @@ svg {
   padding: 10px 0 10px 0;
 }
 
+/*----------FIM DO NAV MENU----*/
+/*---------TAREFAS----------------*/
 .tarefas {
   display: flex;
   flex-direction: row;
@@ -182,7 +182,7 @@ svg {
   left: -4px;
   padding: 6px;
 }
-.tarefa-item .imagem {
+.tarefa-item .image-tarefa {
   height: 180px;
   margin: 0 auto;
   padding-bottom: 5px;
@@ -260,13 +260,14 @@ svg {
   color: #414141;
 }
 
-/*ABOUT*/
+/*----------------------------*/
+/*------SOBRE A EMPRESA---------*/
 .about {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-top: 83px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -283,19 +284,21 @@ svg {
 .about p {
   padding: 9px;
 }
-.about .image {
+.about .image-about {
   padding-bottom: 54px;
   padding-left: 54px;
 }
 
-.retangulo-footer {
+/*---------------------------*/
+/*--------------------FOOTER------------------------------------*/
+footer .retangulo-footer {
   position: relative;
   height: 126px;
-  margin-top: 84px;
+  margin-top: 44px;
   background-image: linear-gradient(#422755, #422755);
   width: 100%;
 }
-.retangulo-footer p {
+footer .retangulo-footer p {
   text-align: center;
   color: white;
   font-style: normal;
@@ -305,12 +308,22 @@ svg {
   text-align: center;
   margin-bottom: 0;
 }
-.retangulo-footer #texto-footer {
+footer .retangulo-footer #texto-footer {
   padding-top: 50px;
 }
 
+/*---------------------------*/
 /*---------------MEDIAS-------------------*/
 @media only screen and (max-width: 768px) {
+  .nav-menu {
+    padding: 10px;
+  }
+
+  .tarefas {
+    flex-direction: column;
+    padding: 10px;
+  }
+
   .tarefa-item {
     width: 89%;
     height: auto;
@@ -323,12 +336,17 @@ svg {
     width: 147px;
     height: 178px;
   }
-
-  .image {
-    padding-bottom: 54px;
+  .tarefa-item .tarefa-texts {
+    padding-left: 25px;
   }
 
-  .text {
+  .about {
+    padding-top: 0px;
+  }
+  .about .image-about {
+    padding-bottom: 54px;
+  }
+  .about .text {
     text-align: center !important;
     width: 309px;
     height: 304px;
@@ -336,19 +354,8 @@ svg {
     padding: 0px 25px 0px 25px;
   }
 
-  .about {
-    padding-top: 0px;
+  .retangulo-footer {
+    margin-top: 100px !important;
   }
 }
-@media only screen and (max-width: 768px) {
-  .tarefas {
-    flex-direction: column;
-    padding: 10px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .tarefa-texts {
-    padding-left: 25px;
-  }
-}
-/*---------------MEDIAS-------------------*/
+/*---------------------------------*/
