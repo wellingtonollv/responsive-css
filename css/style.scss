@@ -204,7 +204,7 @@ svg {
     height: 350px;
     border: solid 1px $main-color;
     border-radius: 14px;
-    padding: 17px;
+    padding: 10px;
 
     #alert-prazo {
         position: absolute;
@@ -322,6 +322,12 @@ svg {
 
 /*ABOUT*/
 .about {
+    
+    align-items: center;
+    
+    justify-content: center;
+   
+    
     padding-top: 83px;
     display: flex;
     flex-wrap: wrap;
@@ -337,16 +343,51 @@ svg {
         color: $main-color;
         text-align: left;
         max-width: 699px;
-        max-height: 180px;
+        
     }
 
     p {
         padding: 9px;
         
     }
-
+    .image{
+        padding-bottom: 54px;
+        padding-left: 54px;
+    }
 
 }
+
+.retangulo-footer {
+    position: relative;
+    
+    height: 126px;  
+    margin-top:84px;
+
+    background-image: linear-gradient($main-color, $main-color);
+    width: 100%;
+
+    p {
+        text-align: center;
+        color: white;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #texto-footer {
+        padding-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
 
 /*---------------MEDIAS-------------------*/
 @media only screen and (max-width: 768px) {
@@ -374,6 +415,9 @@ svg {
         height: 304px;
         font-size:12px !important;
         padding:0px 25px 0px 25px;
+    }
+    .about{
+        padding-top: 0px;
     }
 }
 
