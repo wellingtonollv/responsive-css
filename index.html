@@ -43,16 +43,16 @@
     <section class="main">
 
 
-        <header>
+        <header class="nav-menu">
             <ul>
                 <li class="busca">
                     <form>
                         <input type="text" name="Busque tarefas" placeholder="Busque tarefas">
-                        <button>Buscar</button>
+                        <button id="nav-button">Buscar</button>
                     </form>
                 </li>
-                <li class="filtro"> 
-                    <div id="select"><span>Organizar por:</span> 
+                <li class="filtro">
+                    <div id="select"><span>Organizar por:</span>
                         <select>
                             <option value="relevance">
                                 Prazo
@@ -65,62 +65,75 @@
                 </li>
             </ul>
         </header>
-    
-        <!--
-        <section>
-            <div>
+
+
+        <section class="tarefas">
+            <div class="tarefa-item">
                 <div>
-                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
-                    <div>Prazo curto!</div>
+                    <img class="imagem"
+                        src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                        <div id="alert-prazo">Prazo curto!</div>
                 </div>
-                <div>
-                    <h3>Nome da tarefa</h3>
-                    <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se
+                <div class="tarefa-texts">
+                    <h3 class="name">Nome da tarefa</h3>
+                    <p class="description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam
+                        melhor do que se
                         trata.</p>
-                    <div>Prazo: 00/00/00</div>
+
+                    <div class="prazo"><strong>Prazo:</strong><span class="prazo-data">00/00/00</span></div>
+
+                    <button class="btn">Concluir</button>
+                    <div class="inclusao">Data de inclusão: há 2 semanas</div>
                 </div>
-                <button>Concluir</button>
-                <div>Data de inclusão: há 2 semanas</div>
+
             </div>
-            <div>
+            <div class="tarefa-item">
                 <div>
-                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                    <img class="imagem"
+                        src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
                 </div>
-                <div>
-                    <h3>Nome da tarefa</h3>
-                    <p>Descrição da tarefa, o que deve ser feito.</p>
-                    <div>Prazo: 00/00/00</div>
+                <div class="tarefa-texts">
+                    <h3 class="name">Nome da tarefa</h3>
+                    <p class="description">Descrição da tarefa, o que deve ser feito.</p>
+                    <div class="prazo"><strong>Prazo:</strong><span class="prazo-data">00/00/00</span></div>
+                    <button class="btn">Concluir</button>
+                    <div class="inclusao">Data de inclusão: há 2 semanas</div>
                 </div>
-                <button>Concluir</button>
-                <div>Data de inclusão: há 2 semanas</div>
+
             </div>
-            <div>
+            <div class="tarefa-item">
                 <div>
-                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                    <img class="imagem"
+                        src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
                 </div>
-                <div>
-                    <h3>Nome da tarefa</h3>
-                    <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se
+                <div class="tarefa-texts">
+                    <h3 class="name">Nome da tarefa</h3>
+                    <p class="description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam
+                        melhor do que se
                         trata.</p>
-                    <div>Prazo: 00/00/00</div>
+                    <div class="prazo"><strong>Prazo:</strong><span class="prazo-data">00/00/00</span></div>
+                    <button class="btn">Concluir</button>
+                    <div class="inclusao">Data de inclusão: há 2 semanas</div>
                 </div>
-                <button>Concluir</button>
-                <div>Data de inclusão: há 2 semanas</div>
+
             </div>
-            <div>
+            <div class="tarefa-item">
                 <div>
-                    <img src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
+                    <img class="imagem"
+                        src="https://www.linx.com.br/app/uploads/2020/06/4fe0cc43-4a4e-401e-a301-0a2e3f15041e.jpg">
                 </div>
-                <div>
-                    <h3>Nome da tarefa</h3>
-                    <p>Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se
+                <div class="tarefa-texts">
+                    <h3 class="name">Nome da tarefa</h3>
+                    <p class="description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam
+                        melhor do que se
                         trata.</p>
+                    <button class="btn">Concluir</button>
+                    <div class="inclusao">Data de inclusão: há 2 semanas</div>
                 </div>
-                <button>Concluir</button>
-                <div>Data de inclusão: há 2 semanas</div>
+
             </div>
         </section>
-    -->
+
     </section>
     <!--
     <footer>
