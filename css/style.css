@@ -96,10 +96,13 @@ svg {
   padding: 10px;
 }
 
+.main form {
+  position: relative;
+}
+
 .main input {
   width: 276px;
   height: 34px;
-  position: relative;
   padding-left: 15px;
   border-radius: 8px 0 0 8px;
 }
@@ -117,7 +120,7 @@ svg {
   position: absolute;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  max-height: 34px;
+  right: 0;
 }
 
 .main button:focus {
@@ -149,5 +152,15 @@ svg {
   width: 193px;
   height: 34px;
   border-radius: 8px;
+  padding-left: 15px;
+}
+
+.main .busca {
+  width: 307px;
+  padding: 10px 0 10px 0;
+}
+
+.main .filtro {
+  padding: 10px 0 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
